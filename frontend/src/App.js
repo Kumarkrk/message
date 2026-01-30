@@ -14,7 +14,7 @@ function App() {
   {
     e.preventDefault();
      try {
-      const res = await axios.post("http://localhost:4000/paste/", {
+      const res = await axios.post("https://message-xv8u.onrender.com", {
         content,
         ttl_seconds: ttl ? Number(ttl) : undefined,
         max_views: maxViews ? Number(maxViews) : undefined,
